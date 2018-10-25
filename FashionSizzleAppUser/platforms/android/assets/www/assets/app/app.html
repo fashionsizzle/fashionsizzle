@@ -1,0 +1,32 @@
+<ion-menu side="left" [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>FashionBlog</ion-title>
+        </ion-toolbar>
+    </ion-header>        
+    <ion-content>
+        <ion-list>
+               <ion-item (click)="go_to_home(0)" menuClose>
+                Fashionsizzle
+            </ion-item>
+            <ion-item (click)="go_to_home(1)" menuClose>
+                Fashionsizzler
+            </ion-item>
+            <ion-item (click)="go_to_home(2)" menuClose>
+                   Sizzlemensware
+            </ion-item>
+             <ion-item (click)="go_to_home(3)" menuClose>
+                 Teensizzle
+            </ion-item>
+            <ion-item (click)="go_to_home(4)" menuClose>
+                 Fashionsizzlertv
+            </ion-item>
+            <ion-item (click)="go_to_home(5)" menuClose>
+                 Shop
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage"#content swipeBackEnabled="false"></ion-nav>

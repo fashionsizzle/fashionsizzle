@@ -1,0 +1,220 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.toolbar-background-md{
+   
+//    background-image: linear-gradient(rgba(233, 30, 99, 0.7), rgba(233, 30, 99, 0.73)), url(../assets/images/back.jpg);
+//  background: #b71a4e;
+//     background-size: cover;
+//     background-position: 100%;
+
+   background:rgba(239, 19, 133, 0); 
+// background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
+// background: linear-gradient(to right, #fc6767, #ec008c);
+ background-size: cover;
+ background-position: 100%;
+    
+}
+
+
+.menu-inner .toolbar-md {
+        min-height: 160px;
+        overflow: hidden;
+}
+.menu-inner .header-md::after{
+    background-image: none;
+}
+.menu-img {
+    text-align: center;
+    border: 1px solid #ffffff;
+    width: 90px;
+    height: 90px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+.list-md .item-block .item-inner{
+    border-bottom: none;
+}
+.scroll-content .list.list-md {
+    margin: 2em 0px 0px 0px;
+}
+.scroll-content .item{
+    padding-left:0px;
+}
+.scroll-content .item .item-inner{
+    padding-right:0; 
+}
+.scroll-content .item .input-wrapper .label.label-md{
+  color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+
+ion-content.custombackground {
+    background: #ec008c; 
+background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
+background: linear-gradient(to right, #fc6767, #ec008c);
+// padding-left: 30px;
+}
+ion-item.customtransparent.item.item-block.item-md {
+    padding-left: 2em;
+}
+
+ion-item.customtransparent {
+    background: transparent;
+    margin-top: 5px;
+    width: 300px;
+    
+}
+
+ion-item.customtransparent:hover {
+   background: #f75c6c;
+//    background:linear-gradient(to right, #fc6767, #ec008c);
+    // transition: all 0.5s ease;
+    width: 300px;
+    
+//    animation: ripple 1s ease-out;
+}
+
+// ion-item.customtransparent:after {
+  
+//   opacity: 0;
+//   border-radius: 100%;
+//   transform: scale(1, 1) translate(-50%);
+  
+// }
+
+
+
+/* Ripple magic */
+ion-item.customtransparent{
+  position: relative;
+  overflow: hidden;
+}
+
+ion-item.customtransparent:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+ 
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+ion-item.customtransparent:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+p.username {
+    font-size: 13px;
+    margin-top: 3rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.logo {
+    // margin-top: 11px;
+    // padding-left: 20px;
+    // margin-top: 2em;
+    // margin-bottom: 2em;
+    text-align: center;
+    margin:4em auto;
+}
+
+.sidebarmenulist .label{
+    font-size: 15px !important;
+}
+ion-icon.menuiconalign {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right:15px;
+}
+ion-icon.menuiconalign.second{
+    margin-right: 20px;
+}
+ion-icon.menuiconalign.manfont {
+    margin-right: 20px;
+}
+
+ion-icon.menuiconalign.youtuberight {
+    margin-right: 13px;
+    font-size: 18px;
+   
+}
+
+ion-icon.menuiconalign.right20 {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+// hr.separator1 {
+//     background: rgba(255, 255, 255, 0.17);
+//     height: 1px;
+//     border: transparent;
+//     margin-top: 10px;
+// }
+
+.custombackground .list-ios .item-ios.item-block .item-inner{
+    border-bottom: 0;
+}
+.custombackground .list-ios > .item-block:first-child {
+    border-top:0;
+}
+.custombackground .list-ios .item-block:last-child {
+    border-bottom: 0;
+}
+
+
+
+// ==========================================for iphone css
+.label-ios {
+    margin: 11px 35px;
+    text-align: left !important;
+}
+.content-ios .label-ios ion-icon.manfont {
+    margin-right: 22px;
+}

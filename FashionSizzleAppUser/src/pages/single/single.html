@@ -1,0 +1,73 @@
+<!--
+  Generated template for the SinglePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Shop Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="posrel">
+  <ion-card *ngFor="let data of datas">
+
+    <!--<ion-item *ngFor="let author of data._embedded.wp:featuredmedia.author">-->
+    <!--<ion-avatar item-left>
+        <img src="{{author.source_url}}"/>
+      </ion-avatar>
+      <h2>{{author.name}}</h2> -->
+    <!--</ion-item>-->
+
+    <div class="div_image">
+      <img src="{{data.better_featured_image.media_details.sizes.medium.source_url}}" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>{{data.title.rendered}}</ion-card-title>
+      <div [innerHTML]="data.content.rendered">
+        {{data.content.rendered}}
+      </div>
+      <div class="list-inline Appwp-icon">
+        <button class="add_to_cart" onclick="add_p_deatils(data._links.wp:attachment[0].href)">   
+              <a href="javascript:void(0)">
+               
+              </a>
+            </button>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <!-- <div class="btnfixed">
+ <button ion-button icon-start class="btncart">
+  <ion-icon name="md-cart" class="iconbtncart"></ion-icon>
+  ADD TO CART
+</button>
+<button ion-button icon-start class="btnbuy">
+  <ion-icon name="md-flash" class="iconbtnbuy"></ion-icon>
+  BUY NOW
+</button>
+</div> -->
+
+  <ion-grid class="no-padding fixedsection">
+    <ion-row>
+      <ion-col class="addcart">
+        <button ion-button full outline class="btncart">
+  <ion-icon name="md-cart" class="iconbtncart"></ion-icon>
+  ADD TO CART
+</button>
+      </ion-col>
+      <ion-col class="buynow" (click)="openBuynowPage()">
+        <button ion-button full outline class="btnbuy">
+  <ion-icon name="md-flash" class="iconbtnbuy"></ion-icon>
+  BUY NOW
+</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

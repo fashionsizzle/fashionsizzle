@@ -1,0 +1,43 @@
+
+
+
+<!-- <div class="blurarea"></div> -->
+<ion-menu side="left" [content]="content" >
+    <ion-header>
+         <!-- <ion-toolbar class="toolbarcustom">
+              <div class="menu-img"><img src="assets/images/girl.png" width="50px" height="50px" />
+              
+            <p class="username">John Doe</p>
+            </div>  
+        </ion-toolbar>  -->
+    </ion-header>
+    <ion-content class="custombackground">
+        <div class="logo"><img src="assets/images/icon.png" width="70px" height="70px" /></div>
+        <!-- <hr class="separator1"> -->
+        <ion-list class="sidebarmenulist">
+            <ion-item (click)="go_to_home(0)" menuClose class="customtransparent">
+                <ion-icon name="basket" class="menuiconalign"></ion-icon> Fashion Sizzle
+            </ion-item>
+          
+            <ion-item (click)="go_to_home(1)" menuClose class="customtransparent">
+                <ion-icon name="ios-shirt" class="menuiconalign second"></ion-icon>Fashion Sizzler
+            </ion-item>
+            <ion-item (click)="go_to_home(2)" menuClose class="customtransparent">
+                <ion-icon name="person" class="menuiconalign manfont"></ion-icon>Sizzle Men
+            </ion-item>
+            <ion-item (click)="go_to_home(3)" menuClose class="customtransparent">
+                <ion-icon name="md-briefcase" class="menuiconalign right20"></ion-icon>Teen Sizzle
+            </ion-item>
+            <ion-item (click)="go_to_home(4)" menuClose class="customtransparent">
+                <ion-icon name="logo-youtube" class="menuiconalign youtuberight"></ion-icon>
+                Fashion SizzleTv
+            </ion-item>
+            <ion-item (click)="go_to_home(5)" menuClose class="customtransparent">
+                <ion-icon name="cart" class="menuiconalign youtuberight"></ion-icon> Shop
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

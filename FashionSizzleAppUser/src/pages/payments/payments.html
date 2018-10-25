@@ -1,0 +1,89 @@
+<!--
+  Generated template for the PaymentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Payments</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="payment">
+
+  <ion-card class="top2align">
+    <!-- <ion-card-header class="address_cardhead">
+      <p class="methodhead">Payments Method</p>
+    </ion-card-header> -->
+    <ion-card-content class="payment_content">
+      <div class="paymentoptions"> </div>
+      <ion-list>
+
+        <ion-item>
+          <ion-label class="paymentmethod1">PhonePe (UPI, Wallets)</ion-label>
+          <ion-checkbox [(ngModel)]="PhonePe" class="selectmethod" item-right></ion-checkbox>
+        </ion-item>
+        <hr class="separatorpayement">
+        <ion-item>
+          <ion-label class="paymentmethod1">Credit/ Debit /ATM Card</ion-label>
+          <ion-checkbox [(ngModel)]="card" class="selectmethod" item-right></ion-checkbox>
+
+
+        </ion-item>
+        <hr class="separatorpayement">
+        <ion-item>
+          <ion-label class="paymentmethod1">Net Banking</ion-label>
+          <ion-checkbox [(ngModel)]="Banking" class="selectmethod" item-right></ion-checkbox>
+
+
+        </ion-item>
+        <hr class="separatorpayement">
+
+        <ion-item>
+          <ion-label class="paymentmethod1" >Cash on Delivery</ion-label>
+          <ion-checkbox [(ngModel)]="cod" class="selectmethod" item-right></ion-checkbox>
+
+        </ion-item>
+        
+        <hr class="separatorpayement">
+
+
+        <ion-item>
+          <ion-label class="paymentmethod1">EMI (Easy Installments)</ion-label>
+          <ion-checkbox [(ngModel)]="emi" class="selectmethod" item-right></ion-checkbox>
+
+
+        </ion-item>
+
+
+
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  
+
+  <div class="fixedarea">
+
+    <ion-grid class="no-padding fixedsection">
+      <ion-row class="continuefixed">
+        <ion-col class="priceshown">
+          <p class="pricemoney"> $128</p>
+          <a href="#" class="goprice">View price details</a>
+
+        </ion-col>
+        <ion-col class="continuecolumn">
+          <button ion-button full outline class="btncontinue" >
+  <!-- <ion-icon name="md-flash" class="iconbtnbuy"></ion-icon> -->
+          PLACE ORDER
+        </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,173 @@
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Blog Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- blog content start -->
+<ion-content>
+
+  <ion-grid *ngFor="let data of datas" class="nopadding">
+    <ion-row>
+      <ion-col col-12 class="nopadding">
+        <div class="blogimg">
+          <img src="{{data.better_featured_image.media_details.sizes.medium.source_url}}" />
+          <div class="star_fav">
+            <svg width="25px" height="25px" version="1.1" x="0px" y="0px" viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;"
+              xml:space="preserve">
+              <path style="fill:#ffffff;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+                c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
+                c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
+                c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
+                c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956
+                C22.602,0.567,25.338,0.567,26.285,2.486z" />
+            </svg>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 padding>
+        <div>
+          <p class="blogheading">{{data.title.rendered}}</p>
+          <p [innerHTML]="data.content.rendered" class="subtext">
+            {{data.content.rendered}}
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    <ion-card *ngIf="dataOne && comments.length>0">
+      <ion-card-header class="comment">
+        <h2 class="commentshead">COMMENTS</h2>
+      </ion-card-header>
+      <ion-card-content *ngFor="let comment of comments">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <div class="avtar"><img src="{{comment.author_avatar_urls[24]}}" /></div>
+            </ion-col>
+            <ion-col col-6>
+              <div class="commentname">{{comment.author_name}}</div>
+            </ion-col>
+            <ion-col text-right>
+              <div class="commentdate">{{comment.date | date:'dd/MM/yyyy'}}</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div [innerHTML]="comment.content.rendered">
+                {{comment.content.rendered}}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+
+
+
+
+
+  <!-- <ion-card *ngIf="dataOne && comments.length>0">
+    <ion-card-header class="comment">
+      <h2 class="commentshead">COMMENTS</h2>
+    </ion-card-header>
+    <div class="comment-item" *ngFor="let comment of comments">
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="{{comment.author_avatar_urls[24]}}" />
+        </ion-avatar>
+        <h2 class="author_namecomment">{{comment.author_name}}</h2>
+        <p class="date1">
+          {{comment.date | date:'dd/MM/yyyy'}}
+        </p>
+      </ion-item>
+      <ion-card-content>
+        <div [innerHTML]="comment.content.rendered" class="coments_para">
+          {{comment.content.rendered}}
+        </div>
+      </ion-card-content>
+    </div>
+  </ion-card> -->
+  <!-- new comment -->
+  <div class="add_new_cmmnt" *ngIf="dataOne">
+    <!-- <button ion-button  (click)="openCommentPage()" color="white" clear>New Comment</button> -->
+    <button ion-button round (click)="openCommentPage()">New Comment</button>
+  </div>
+  <!--New Comment-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <ion-card *ngFor="let data of datas"> -->
+  <!-- <ion-item *ngFor="let author of data._embedded.author">
+      <ion-avatar item-left>
+        
+        <img src="{{author.avatar_urls['24']}}"/>
+      </ion-avatar>
+      <h2 >{{author.name}}</h2>
+      <p>
+        {{data.date | date:'dd/MM/yyyy'}}</p>
+      
+    </ion-item> -->
+  <!--<div *ngFor="let thumbnail of data._embedded['wo:featuredmedia']">
+      <img
+        src="{{thumbnail.media_details.sizes.full.source_url}}"
+        *ngIf="thumbnail.source_url"/>
+    </div>-->
+  <!-- <ion-card-content>
+
+      <div class="card_img">
+        <div class="card card-md cardrelative"><img src="{{data.better_featured_image.media_details.sizes.medium.source_url}}" />
+          <div class="star_fav">
+            <svg version="1.1" id="Capa_star" x="0px" y="0px" viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;"
+              xml:space="preserve">
+              <path style="fill:rgba(233, 30, 99, 0.89);" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+        c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
+        c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
+        c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
+        c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956
+        C22.602,0.567,25.338,0.567,26.285,2.486z" />
+
+
+            </svg>
+
+          </div>
+        </div>
+      </div>
+
+    </ion-card-content>
+    <ion-card-content>
+      <ion-card-title>{{data.title.rendered}}</ion-card-title>
+      <div [innerHTML]="data.content.rendered">
+        {{data.content.rendered}}
+        <br>
+      </div>
+    </ion-card-content> -->
+  <!-- </ion-card> -->
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,8 @@
+{
+    "fashionSizzle":"http://fashionsizzle.com/wp-json/wp/v2/posts/?_embed&?filter[order]=DESC&filter[posts_per_page]=5&page=",
+    "fashionSizzler":"http://fashionsizzler.net/wp-json/wp/v2/posts/?_embed&?filter[order]=DESC&filter[posts_per_page]=5&page=",
+    "sizzleMenswear":"http://sizzlemenswear.com/wp-json/wp/v2/posts/?_embed&?filter[order]=DESC&filter[posts_per_page]=5&page=",
+    "teenSizzle":"http://teen-sizzle.com/wp-json/wp/v2/posts/?_embed&?filter[order]=DESC&filter[posts_per_page]=5&page="
+}
+
+   

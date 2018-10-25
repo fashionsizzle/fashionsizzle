@@ -1,0 +1,14 @@
+{
+  "name": "appwp",
+  "app_id": "",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://staging.memeinfotech.com"
+    }
+  ],
+  "integrations": {
+    "cordova": {}
+  }
+}

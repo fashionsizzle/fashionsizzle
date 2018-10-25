@@ -1,0 +1,62 @@
+<!--
+  Generated template for the ShopPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Shop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let data of datas" (click)="openSinglePage(data._links.self[0].href)" class="shop_product">
+    <div class="shadow">
+      <div class="blog_title">{{data.title.rendered}}
+        <!--<p class="date"> {{data.date}}</p>-->
+        <!--<p class="details" (click)="openSinglePage(data.link)"></p>-->
+      </div>
+      <div class="div_image">
+        <img src="{{data.better_featured_image.media_details.sizes.medium.source_url}}" />
+        <button ion-button color="transparent" class="select_fav"><ion-icon name="heart-outline" class="favourite"></ion-icon></button>
+      </div>
+      <!-- <ion-card-content>
+
+        <div [innerHTML]="data.content.rendered">
+          {{data.content.rendered}}
+        </div>
+      </ion-card-content>  -->
+      <div class="productdes">
+
+        <button ion-button color="transparent" class="review">
+            <ion-icon name="md-star" class="start1"></ion-icon>
+            <ion-icon name="md-star" class="start1"></ion-icon>
+            <ion-icon name="md-star" class="start1"></ion-icon>
+            <ion-icon name="md-star" class="start1"></ion-icon>
+            <ion-icon name="ios-star-outline" class="start1 beforecount"></ion-icon>
+            <p class="reviewcount">(32)</p>
+          </button>
+        <div class="price">
+          <p class="product_price">$128</p>
+        </div>
+      </div>
+    </div>
+
+  </ion-card>
+   <!-- infinite scroll -->
+   <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content      loadingSpinner="bubbles"
+      loadingText="Loading more data..." >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

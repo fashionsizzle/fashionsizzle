@@ -1,0 +1,247 @@
+page-singale {
+      ion-title{
+        font-family: 'Quicksand', sans-serif;
+    }
+  .content .scroll-content{
+        padding:0 !important;
+       
+    }
+    .header-md::after{
+        background-image: none;
+    }
+     ion-navbar .title .toolbar-title-md{
+        color:#fff;
+        font-size: 15px;
+        padding:0;
+        margin-top:1px;
+        font-weight: 400;
+        word-spacing: 4px;
+    }
+    button.bar-buttons{
+        color:#fff;
+    }
+    .toolbar-background-md{
+            background: #E91E63
+    }
+  
+
+.inner_div
+{
+    position: absolute;
+    color: rgba(226, 221, 221, 0.7);
+    // height: 0px;
+   
+    right: 0px;
+    left: 0px;
+    margin-left: 40px;
+    margin-right: 30px;
+    bottom:0px;
+}
+
+.img_icon {
+    height: 50px;
+    width: 50px;
+    margin: 0px auto;
+}
+.item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.7rem;
+    padding-left: 1em !important;
+    color: #000;
+   
+    transition: background-color 200ms linear;
+}
+.item-md {
+    position: relative;
+    padding-right: 0;
+    padding-left: 16px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: #000;
+    background-color:#ffffff;
+     padding-left: 1em !important;
+    box-shadow: none;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card_img img {
+    height: 100%;
+}
+h2.commentshead {
+   color: #777;
+}
+.coments_para {
+   padding-left: 68px;
+   font-family: Roboto;
+}
+.coments_para p
+{
+    
+    // padding-left: 12px;
+}
+.comment-item {
+    border-bottom: 1px solid #dfdfdf;
+}
+.add_new_cmmnt {
+   
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 1em;
+    /* color: white!important; */
+}
+ion-card-header.comment.card-header {
+    background:#ebe4e5;
+}
+h2.author_namecomment {
+     padding-top: 5px;
+    text-transform: capitalize;
+    font-family: Roboto;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+}
+.add_new_cmmnt .button {
+    background: #E91E63;
+    
+}
+.item-inner {
+    /* border-bottom-color: #32db64; */
+    margin-top: 5px
+}
+
+span.button-inner {
+    color: #ffffff;
+}
+
+
+.card-title-md {
+   display: block;
+    margin: 2px 0 2px;
+    padding: 8px 0 8px 0;
+    font-size: 14px;
+    line-height: 1.2;
+    color:  #958b8b;;
+    font-weight: 500;
+    font-family: Roboto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.star_fav {
+    background: #ef254c;
+    border-radius: 50%;
+    height: 53px;
+    width: 53px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 13px;
+    position: absolute;
+    // top: 94%;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(66, 58, 61, 0.21);
+}
+// svg#Capa_star {
+//     height: 21px;
+//     width: 21px;
+//     vertical-align: middle;
+   
+// }
+.cardrelative
+{
+    position: relative;
+    box-shadow: none;
+}
+ion-card img {
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+}
+
+
+
+//blog image css
+  .blogimg img{
+      width:100%;
+      height:auto;
+  }
+
+  p.blogheading {
+    color: #ef254c;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 25px 10px 0;
+  }
+
+  .subtext{
+      font-size: 15px;
+      color:#000;
+      padding:0 10px;
+      font-weight: 400;
+      line-height: 19px;
+  }
+
+  .nopadding{
+      padding:0;
+  }
+    
+
+
+
+//   comment section
+
+  ion-card img{
+      margin-top: 0;
+  }
+  
+  .avtar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+.card-content {
+        padding: 10px 13px 0px 13px;
+        font-size: 12px;
+        line-height: 15px;
+        border-bottom: 1px solid #eae5e5;
+    }
+    .card-content-ios {
+        padding: 10px 13px 0px 13px;
+        font-size: 12px;
+        line-height: 15px;
+        border-bottom: 1px solid #eae5e5;
+    }
+    .commentname {
+        margin-top: 11px;
+        font-size: 15px;
+    }
+
+    .commentdate {
+        font-size: 12px;
+        color:#635f5f;
+        margin-top: 11px;
+
+    }
+
+    .card p {
+        margin: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5;
+        opacity: 0.8;
+        font-family: 'Quicksand', sans-serif;
+        background: rgba(235, 228, 229, 0.32);
+        border-radius: 5px;
+        padding: 15px 15px;
+    }
+    .alignnone {
+        width: 100%;
+        height: auto;
+    }
+
+}

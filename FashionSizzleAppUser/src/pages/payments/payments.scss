@@ -1,0 +1,115 @@
+page-payments {
+
+    .toolbar-md {
+    padding: 4px;
+    min-height: 30px;
+}
+.title .toolbar-title-md {
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 2px;
+    font-weight: 100;
+    word-spacing: 4px;
+}
+
+.fixedarea {
+  
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 0px 0px #fff, 0px -1px 5px rgba(136, 136, 136, 0.39);
+}
+.no-padding
+{
+    padding: 0 20px 0 0;
+}
+
+button.btncontinue {
+   background: #4CAF50;
+    color: #ffffff;
+    border: white;
+    font-size: 12px;
+    height: 50px;
+}
+
+.continuefixed {
+    padding: 2px 4px 0 24px;
+}
+p.pricemoney {
+    margin-bottom: 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+a.goprice {
+    color: #E91E63;
+    text-decoration: none;
+    font-size: 12px;
+}
+button.chng_addr {
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+p.methodhead {
+    text-align: center;
+    font-size: 13px;
+    border: transparent;
+    color: #8c8684;
+    font-weight: 400;
+}
+
+
+.separatorpayement
+{
+    margin: 0;
+    background: transparent;
+}
+
+// .payment ion-label {
+//     color: #847878;
+//     text-align: left;
+// }
+ion-label.paymentmethod1.label {
+   color: #888080 !important;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 16px;
+
+}
+.payment .item-block:first-child {
+    border-top: none;
+}
+.payment .item-block:last-child {
+    border-bottom: none;
+}
+.payment_content {
+    padding: 0;
+}
+ion-checkbox.selectmethod {
+    
+    padding-right: 6px;
+}
+
+.payment_content ion-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.payment_content ion-list.list.list-md {
+    margin-top: 0;
+}
+.payment_content .checkbox-icon {
+    border-color: #b4aaaa;
+    border-width: 1px;
+}
+
+ .payment .scroll-content {
+    padding: 0px !important;
+}
+.top2align
+{
+    margin-top: 2em;
+}
+}

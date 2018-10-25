@@ -1,0 +1,25 @@
+page-splash {
+
+    .backgroundtintimg{
+       background: linear-gradient(rgba(194, 64, 107, 0.7), rgba(153, 73, 125, 0.6)), url(../assets/images/10.jpg);
+       background-size: cover;
+    }
+
+    .scroll-content{
+       display: table;
+       width:100%;
+       height:600px;
+    }
+
+    .logoimg{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .logoimg img{
+       width:100px;
+       height:100px;
+    }
+
+}

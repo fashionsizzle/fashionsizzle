@@ -1,0 +1,160 @@
+page-single { 
+      ion-title{
+        font-family: 'Quicksand', sans-serif;
+    }
+    .content .scroll-content{
+        padding:0 !important;
+       
+    }
+    .header-md::after{
+        background-image: none;
+    }
+   ion-navbar .title .toolbar-title-md{
+        color:#fff;
+        font-size: 16px;
+        padding:0;
+        margin-top:2px;
+        font-weight: 100;
+        word-spacing: 4px;
+    }
+    button.bar-buttons{
+        color:#fff;
+    }
+    .toolbar-background-md{
+        background: #E91E63
+    }
+    .div_image
+{
+    position: relative;
+}
+.div-img img{
+     min-width: 100%;
+    }
+    .inner_div
+{
+    position: absolute;
+    color: rgba(226, 221, 221, 0.7);
+    // height: 0px;
+   
+    right: 0px;
+    left: 0px;
+    margin-left: 40px;
+    margin-right: 30px;
+    bottom:0px;
+}
+.toolbar-md {
+    padding: 4px;
+    min-height: 50px;
+}
+
+span.button-inner {
+    color: #ffffff;
+}
+
+
+.img_icon {
+    height: 50px;
+    width: 50px;
+    margin: 0px auto;
+}
+
+
+
+.Appwp-icon {
+      font-size:25px;
+      text-align: center;
+
+}
+.cart{
+        margin-right:25px;
+         color: #0f0fff;
+    }
+    
+
+    .card-title-md {
+    display: block;
+    margin: 2px 0 2px;
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #777;
+}
+
+.card-md p {
+    margin: 4px 0 3px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgba(13, 10, 10, 0.82);
+    font-family: 'Quicksand', sans-serif;
+}
+.posrel
+{
+    position: relative;
+}
+.btnfixed {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
+    /* width: 800px; */
+    /* width: 218px; */
+    /* padding: 0; */
+    /* text-align: center; */
+    /* width: 238px; */
+    /* right: 49px; */
+}
+ion-icon.iconbtn {
+    padding-right: 14px;
+}
+
+button.btncart {
+  background: #e91e63;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    
+   
+}
+button.btnbuy {
+     border: none;
+background: #978c8c;
+    border-radius: 0px;
+  
+    box-shadow: none;
+  
+    
+}
+
+ion-icon.iconbtnbuy {
+    padding-right: 10px;
+    
+}
+ion-icon.iconbtncart {
+    margin-right: 8px;
+}
+ion-col.col.addcart {
+    background: #e91e63;
+}
+
+ion-col.col.buynow {
+    background: #978c8c;
+}
+
+.no-padding
+{
+    padding: 0;
+}
+
+ion-grid.no-padding.fixedsection.grid {
+    /* bottom: 0; */
+    position: fixed;
+    bottom: 0;
+}
+
+
+}
